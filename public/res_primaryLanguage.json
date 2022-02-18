@@ -81,28 +81,48 @@
   ],
   "experience": [
     {
-      "company": "DefOpenSource",
-      "title": "Front-End Developer",
-      "years": "10.2019 - present",
-      "mainTech": ["Angular 8/9/10"],
+      "company": "Bizim Consulting AB",
+      "title": "Full-stack Developer",
+      "years": "Oct 2021 - Present",
+      "mainTech": ["NextJs"],
+      "description": [
+        "Design, implement and maintain Adlar App which is a map of changed name inAzerbaijan province of Iran.",
+        "modifying data with firebase functions.",
+        "exporting data with firebase scheduled functions."
+      ],
+      "link": "https://adlar.org",
       "technologies": [
-        "REST API",
-        "RxJS",
-        "JavaScript",
-        "Bootstrap",
-        "MDBootstrap",
-        "EF Core",
-        ".NET Core",
-        "SignalR",
-        "Angular Material"
+        "React JS",
+        "Next JS",
+        "Express JS",
+        "Node JS",
+        "Google API",
+        "Firebase",
+        "Googleanalytics",
+        "Jest unit test",
+        "Multer",
+        "Google map services",
+        "MobX",
+        "REST APIs"
       ]
     },
     {
-      "company": "Serros Solutions",
-      "title": "Intern",
-      "years": "01.2018 - 09.2019",
-      "mainTech": ["Angular 7/8"],
-      "technologies": ["RxJS", "Django", "PHP", "JavaScript", "DHTMLX Gantt"]
+      "company": "HasebGostar",
+      "title": "Front-end developer",
+      "years": "Aug 2020 - Oct 2021",
+      "mainTech": ["Flutter"],
+      "description": [
+        "implementing an organizational level application for governments tax system.",
+        "Target devices: desktops and tablets."
+      ],
+      "technologies": [
+        "Flutter",
+        "provider state management",
+        "MVVM",
+        "Hive",
+        "Dio",
+        "REST APIs"
+      ]
     }
   ]
 }

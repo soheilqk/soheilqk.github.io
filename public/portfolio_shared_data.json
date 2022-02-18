@@ -19,24 +19,24 @@
   "skills": {
     "icons": [
       {
-        "name": "HTML 5",
-        "class": "devicon-html5-plain",
-        "level": "95"
+        "name": "React JS",
+        "class": "devicon-react-original",
+        "level": "100"
       },
       {
-        "name": "CSS 3",
-        "class": "devicon-css3-plain",
-        "level": "95"
+        "name": "Node JS",
+        "class": "devicon-nodejs-plain",
+        "level": "100"
       },
       {
-        "name": "Angular",
-        "class": "devicon-angularjs-plain",
-        "level": "80"
+        "name": "Flutter",
+        "class": "devicon-flutter-plain",
+        "level": "100"
       },
       {
-        "name": "TypeScript",
-        "class": "devicon-typescript-plain",
-        "level": "90"
+        "name": "Firebase",
+        "class": "devicon-firebase-plain",
+        "level": "100"
       },
       {
         "name": "JavaScript",
@@ -44,9 +44,19 @@
         "level": "70"
       },
       {
-        "name": "Sass",
-        "class": "devicon-sass-original",
+        "name": "Express JS",
+        "class": "devicon-express-original-wordmark",
         "level": "75"
+      },
+      {
+        "name": "Redux",
+        "class": "devicon-redux-original",
+        "level": "85"
+      },
+      {
+        "name": "Typescript",
+        "class": "devicon-typescript-plain",
+        "level": "85"
       },
       {
         "name": "Bootstrap",
@@ -54,13 +64,38 @@
         "level": "85"
       },
       {
-        "name": "C#",
-        "class": "devicon-csharp-plain",
+        "name": "Next JS",
+        "class": "devicon-nextjs-original",
         "level": "65"
+      },
+      {
+        "name": "Android",
+        "class": "devicon-android-plain",
+        "level": "60"
+      },
+      {
+        "name": "Git",
+        "class": "devicon-git-plain",
+        "level": "60"
+      },
+      {
+        "name": "Github",
+        "class": "devicon-github-original",
+        "level": "60"
+      },
+      {
+        "name": "MongoDB",
+        "class": "devicon-mongodb-plain",
+        "level": "60"
       },
       {
         "name": "MySql",
         "class": "devicon-mysql-plain",
+        "level": "60"
+      },
+      {
+        "name": "Wordpress",
+        "class": "devicon-wordpress-plain",
         "level": "60"
       }
     ]

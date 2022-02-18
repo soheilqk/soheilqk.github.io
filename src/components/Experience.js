@@ -37,12 +37,18 @@ class Experience extends Component {
               color: "#fff",
               textAlign: "center",
             }}
-            icon={<i className="fab fa-angular experience-icon"></i>}
+            icon={
+              <span
+                class="iconify"
+                data-icon="fluent:window-dev-edit-16-regular"
+                data-width="96"
+              ></span>
+            }
             key={i}
           >
-            <div style={{ textAlign: "left", marginBottom: "4px" }}>
+            {/* <div style={{ textAlign: "left", marginBottom: "4px" }}>
               {mainTech}
-            </div>
+            </div> */}
 
             <h3
               className="vertical-timeline-element-title"
@@ -56,6 +62,13 @@ class Experience extends Component {
             >
               {work.company}
             </h4>
+
+            <ul className="description">
+              {work?.description.map((des) => (
+                <li className="descriptionItem">{des}</li>
+              ))}
+            </ul>
+
             <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );
@@ -73,7 +86,7 @@ class Experience extends Component {
             </h1>
           </div>
         </div>
-        <div className="col-md-8 mx-auto">
+        <div className="col-md-12 ">
           <VerticalTimeline>
             {work}
             <VerticalTimelineElement
