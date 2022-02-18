@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
 import Switch from "react-switch";
+import { Row } from "react-bootstrap";
 
 class Header extends Component {
   titles = [];
@@ -27,27 +28,63 @@ class Header extends Component {
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles.map(x => [ x.toUpperCase(), 1500 ] ).flat();
+      this.titles = this.props.sharedData.titles
+        .map((x) => [x.toUpperCase(), 1500])
+        .flat();
     }
 
-    const HeaderTitleTypeAnimation = React.memo( () => {
-      return <Typical className="title-styles" steps={this.titles} loop={50} />
-    }, (props, prevProp) => true);
+    const HeaderTitleTypeAnimation = React.memo(
+      () => {
+        return (
+          <Typical className="title-styles" steps={this.titles} loop={50} />
+        );
+      },
+      (props, prevProp) => true
+    );
 
     return (
-      <header id="home" style={{ height: window.innerHeight - 140, display: 'block' }}>
-        <div className="row aligner" style={{height: '100%'}}>
+      <header id="home" style={{ height: "100vh", display: "block" }}>
+        <div className="row aligner" style={{ height: "100%" }}>
           <div className="col-md-12">
             <div>
-              <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-              <br/>
-              <h1 className="mb-0">
-                <Typical steps={[name]} wrapper="p" />
-              </h1>
-              <div className="title-container">
+              <span
+                className="iconify header-icon"
+                data-icon="la:laptop-code"
+                data-inline="false"
+                s
+              ></span>
+              <br />
+              <h1 className="mb-0">{name}</h1>
+              <div className="title-container mb-4">
                 <HeaderTitleTypeAnimation />
               </div>
-              <Switch
+
+              <button className="downloadCV">Download CV</button>
+
+              <div className="contactsRow">
+                <div className="contactsColumn">
+                  <span
+                    style={{ height: "55px" }}
+                    class="iconify"
+                    data-icon="carbon:email"
+                    data-width="48"
+                  />
+                  <span
+                    style={{ height: "55px" }}
+                    class="iconify"
+                    data-icon="bi:phone"
+                    data-width="48"
+                  />
+                </div>
+
+                <div className="contactsColumn">
+                  <p className="contactsText mb-0">soheil.q.k@gmail.com</p>
+                  <p className="contactsText mb-0">+98 9933 360 0933</p>
+                </div>
+              </div>
+              <div className="contactsRow"></div>
+              <div className="contactsRow"></div>
+              {/* <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}
                 offColor="#baaa80"
@@ -86,7 +123,7 @@ class Header extends Component {
                   ></span>
                 }
                 id="icon-switch"
-              />
+              /> */}
             </div>
           </div>
         </div>

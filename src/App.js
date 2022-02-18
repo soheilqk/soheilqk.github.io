@@ -9,7 +9,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 class App extends Component {
-
   constructor(props) {
     super();
     this.state = {
@@ -30,16 +29,16 @@ class App extends Component {
   }
 
   swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
-      oppositeLangIconId === window.$primaryLanguageIconId
-        ? window.$secondaryLanguageIconId
-        : window.$primaryLanguageIconId;
-    document
-      .getElementById(oppositeLangIconId)
-      .removeAttribute("filter", "brightness(40%)");
-    document
-      .getElementById(pickedLangIconId)
-      .setAttribute("filter", "brightness(40%)");
+    // var pickedLangIconId =
+    //   oppositeLangIconId === window.$primaryLanguageIconId
+    //     ? window.$secondaryLanguageIconId
+    //     : window.$primaryLanguageIconId;
+    // document
+    //   .getElementById(oppositeLangIconId)
+    //   .removeAttribute("filter", "brightness(40%)");
+    // document
+    //   .getElementById(pickedLangIconId)
+    //   .setAttribute("filter", "brightness(40%)");
   }
 
   componentDidMount() {
@@ -83,7 +82,7 @@ class App extends Component {
     return (
       <div>
         <Header sharedData={this.state.sharedData.basic_info} />
-        <div className="col-md-12 mx-auto text-center language">
+        {/* <div className="col-md-12 mx-auto text-center language">
           <div
             onClick={() =>
               this.applyPickedLanguage(
@@ -116,7 +115,7 @@ class App extends Component {
               id={window.$secondaryLanguageIconId}
             ></span>
           </div>
-        </div>
+        </div> */}
         <About
           resumeBasicInfo={this.state.resumeData.basic_info}
           sharedBasicInfo={this.state.sharedData.basic_info}
