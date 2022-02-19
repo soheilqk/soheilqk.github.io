@@ -6,32 +6,14 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 
-class Experience extends Component {
+class Education extends Component {
   render() {
-    if (this.props.resumeExperience && this.props.resumeBasicInfo) {
-      var sectionName = this.props.resumeBasicInfo.section_name.experience;
-      var work = this.props.resumeExperience.map(function (work, i) {
-        const technologies = work.technologies;
-        const mainTechnologies = work.mainTech;
-
-        var mainTech = mainTechnologies.map((technology, i) => {
-          return (
-            <Badge pill className="main-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
-        var tech = technologies?.map((technology, i) => {
-          return (
-            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
-              {technology}
-            </Badge>
-          );
-        });
+    if (this.props.education) {
+      var educations = this.props.education.map(function (education, i) {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={work.years}
+            date={education.years}
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
@@ -54,28 +36,14 @@ class Experience extends Component {
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
-              {work.title}
+              {education.title}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {work.company}
+              {education.university}
             </h4>
-
-            <ul className="description">
-              {work?.description?.map((des) => (
-                <li className="descriptionItem">{des}</li>
-              ))}
-            </ul>
-
-            {work?.link ? (
-              <a className="workLink" href={work.link} target="_blank">
-                {work.link}
-              </a>
-            ) : null}
-
-            <div style={{ textAlign: "left", marginTop: "15px" }}>{tech}</div>
           </VerticalTimelineElement>
         );
       });
@@ -87,14 +55,14 @@ class Experience extends Component {
           <div className="col-md-12">
             <h1 className="section-title" style={{ color: "black" }}>
               <span className="text-black" style={{ textAlign: "center" }}>
-                {sectionName}
+                Education
               </span>
             </h1>
           </div>
         </div>
         <div className="col-md-12 ">
           <VerticalTimeline>
-            {work}
+            {educations}
             <VerticalTimelineElement
               iconStyle={{
                 background: "#AE944F",
@@ -112,4 +80,4 @@ class Experience extends Component {
   }
 }
 
-export default Experience;
+export default Education;

@@ -4,6 +4,8 @@ import AwesomeSlider from "react-awesome-slider";
 import AwesomeSliderStyles from "../scss/light-slider.scss";
 import AwesomeSliderStyles2 from "../scss/dark-slider.scss";
 import "react-awesome-slider/dist/custom-animations/scale-out-animation.css";
+import Badge from "react-bootstrap/Badge";
+
 class ProjectDetailsModal extends Component {
   render() {
     if (this.props.data) {
@@ -13,19 +15,11 @@ class ProjectDetailsModal extends Component {
       var description = this.props.data.description;
       var url = this.props.data.url;
       if (this.props.data.technologies) {
-        var tech = technologies.map((icons, i) => {
+        var tech = technologies?.map((technology, i) => {
           return (
-            <li className="list-inline-item mx-3" key={i}>
-              <span>
-                <div className="text-center">
-                  <i className={icons.class} style={{ fontSize: "300%" }}>
-                    <p className="text-center" style={{ fontSize: "30%" }}>
-                      {icons.name}
-                    </p>
-                  </i>
-                </div>
-              </span>
-            </li>
+            <Badge pill className="experience-badge mr-2 mb-2" key={i}>
+              {technology}
+            </Badge>
           );
         });
         if (this.props.data.images) {
@@ -35,6 +29,14 @@ class ProjectDetailsModal extends Component {
         }
       }
     }
+
+    const mobileImageStyle = {
+      height: "630px",
+      paddingBottom: "50px",
+      width: "350px",
+      paddingBottom: "50px",
+    };
+
     return (
       <Modal
         {...this.props}
@@ -47,7 +49,14 @@ class ProjectDetailsModal extends Component {
           <i className="fas fa-times fa-3x close-icon"></i>
         </span>
         <div className="col-md-12">
-          <div className="col-md-10 mx-auto" style={{ paddingBottom: "50px" }}>
+          <div
+            className="col-md-10 mx-auto"
+            style={
+              this.props.data?.mobileImage
+                ? mobileImageStyle
+                : { paddingBottom: "50px" }
+            }
+          >
             <div className="slider-tab">
               <span
                 className="iconify slider-iconfiy"
@@ -70,7 +79,7 @@ class ProjectDetailsModal extends Component {
             </div>
             <AwesomeSlider
               cssModule={[AwesomeSliderStyles, AwesomeSliderStyles2]}
-              animation="scaleOutAnimation"
+              animation="cubeAnimation"
               className="slider-image"
             >
               {img}

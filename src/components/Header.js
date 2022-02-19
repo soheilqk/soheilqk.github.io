@@ -36,7 +36,9 @@ class Header extends Component {
     const HeaderTitleTypeAnimation = React.memo(
       () => {
         return (
-          <Typical className="title-styles" steps={this.titles} loop={50} />
+          <div className="contactsRow">
+            <Typical className="title-styles" steps={this.titles} loop={50} />
+          </div>
         );
       },
       (props, prevProp) => true
@@ -51,7 +53,6 @@ class Header extends Component {
                 className="iconify header-icon"
                 data-icon="la:laptop-code"
                 data-inline="false"
-                s
               ></span>
               <br />
               <h1 className="mb-0">{name}</h1>
@@ -59,7 +60,13 @@ class Header extends Component {
                 <HeaderTitleTypeAnimation />
               </div>
 
-              <button className="downloadCV">Download CV</button>
+              <a
+                className="downloadCV"
+                href="https://github.com/soheilqk/soheilqk/raw/main/CV.pdf"
+                target="_blank"
+              >
+                Download CV
+              </a>
 
               <div className="contactsRow">
                 <div className="contactsColumn">
@@ -75,15 +82,39 @@ class Header extends Component {
                     data-icon="bi:phone"
                     data-width="48"
                   />
+                  <span
+                    style={{ height: "55px" }}
+                    class="iconify"
+                    data-icon="akar-icons:github-fill"
+                    data-width="48"
+                  ></span>
+                  <span
+                    style={{ height: "55px" }}
+                    class="iconify"
+                    data-icon="akar-icons:linkedin-box-fill"
+                    data-width="48"
+                  ></span>
                 </div>
 
                 <div className="contactsColumn">
                   <p className="contactsText mb-0">soheil.q.k@gmail.com</p>
                   <p className="contactsText mb-0">+98 9933 360 0933</p>
+                  <a
+                    className="contactsText mb-0 contactsLink"
+                    href="https://github.com/soheilqk"
+                    target="_blank"
+                  >
+                    soheilqk
+                  </a>
+                  <a
+                    className="contactsText mb-0 contactsLink"
+                    href="https://www.linkedin.com/in/soheil-qorbani"
+                    target="_blank"
+                  >
+                    soheil-qorbani
+                  </a>
                 </div>
               </div>
-              <div className="contactsRow"></div>
-              <div className="contactsRow"></div>
               {/* <Switch
                 checked={this.state.checked}
                 onChange={this.onThemeSwitchChange}

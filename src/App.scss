@@ -122,20 +122,19 @@ header h1 {
 .foto img {
   display: block;
   width: 100%;
+  object-fit: contain;
 }
 
 .foto div {
+  width: 355px;
+  height: 340px;
+  margin: 8px;
   background: #ffffff;
   display: inline-block;
-  margin: 0 auto 5% auto;
   padding: 10px 10px 5px;
   text-align: center;
   text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
+  box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
   transition: all 0.2s linear;
   z-index: 0;
   position: relative;
@@ -161,7 +160,7 @@ header h1 {
 
 .project-title-settings {
   margin-top: 5%;
-  font: 18px/24px "opensans-bold", sans-serif;
+  font: 18px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: black;
@@ -176,7 +175,7 @@ header h1 {
 .polaroid span {
   background: #ffffff;
   display: inline-block;
-  padding-bottom: 10px;
+  // padding-bottom: 10px;
   text-align: center;
   text-decoration: none;
   box-shadow: 0 4px 6px rgb(0 0 0 / 30%);
@@ -234,7 +233,7 @@ header h1 {
 }
 
 .experience-badge {
-  font-size: 11px !important;
+  font-size: 14px !important;
   text-align: left !important;
   padding: 5px 8px 5px 8px !important;
   vertical-align: baseline;
@@ -443,6 +442,7 @@ footer a:focus {
 }
 
 .downloadCV {
+  display: inline-block;
   margin: 40px auto;
   font-size: x-large;
   background: transparent;
@@ -450,6 +450,12 @@ footer a:focus {
   padding: 10px 25px;
   border: 1px solid #000;
   box-shadow: 0px 0px 12px #000000b0;
+  text-decoration: none;
+  color: #212529;
+}
+.downloadCV:hover {
+  text-decoration: none;
+  color: #212529;
 }
 
 .downloadCV:focus {
@@ -469,4 +475,25 @@ footer a:focus {
 
 .vertical-timeline-element-date {
   font-size: 13px !important;
+}
+
+.workLink {
+  font-size: 14px;
+}
+
+body[data-theme="light"] .awssld {
+  height: 100%;
+}
+
+.clickForMore {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contactsLink {
+  width: fit-content;
+  color: #212529;
+  text-decoration: none;
 }

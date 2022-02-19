@@ -4,78 +4,102 @@
     "description": "👋 I'm Soheil Qorbani. I'm a full-stack developer. I'm working with newest front-end frameworks like React, Next and flutter. and for the back-end I work with nodeJs, expressJs and firebase. I'm also a mobile app developer I use kotlin and java for native android development and flutter for both android and IOS. Thank you for your interest 💛.",
     "section_name": {
       "about": "About me",
-      "projects": "Projects",
+      "projects": "Projects and freelancer",
       "skills": "Skills",
       "experience": "Experience"
     }
   },
   "projects": [
     {
-      "title": "Animal Shelter",
-      "startDate": "2020",
-      "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+      "title": "Ice-watch online shop",
+      "startDate": "2018",
+      "description": "Design, implement and maintain Ice-watch online shop android app.",
+      "mainImage": "images/portfolio/icewatchapp/ice.png",
       "images": [
-        "images/portfolio/animal-shelter/p1.jpg",
-        "images/portfolio/animal-shelter/p2.jpg"
+        "images/portfolio/icewatchapp/ice-1.png",
+        "images/portfolio/icewatchapp/ice-2.png",
+        "images/portfolio/icewatchapp/ice-3.png",
+        "images/portfolio/icewatchapp/ice-4.png",
+        "images/portfolio/icewatchapp/ice-5.png",
+        "images/portfolio/icewatchapp/ice-6.png"
       ],
+      "mobileImage": true,
       "url": "",
       "technologies": [
-        {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
-        }
+        "Kotlin",
+        "Retrofit",
+        "Glide",
+        "Slim php framework",
+        "REST APIs",
+        "mySQL"
       ]
     },
     {
-      "title": "Photography",
+      "title": "Metre plast website",
       "startDate": "2018",
-      "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
+      "description": "Design, implement and maintain Metre plast website as an advertisement and introduction.",
+      "mainImage": "images/portfolio/metreplast/metre-1.png",
       "images": [
-        "images/portfolio/photography/p1.jpg",
-        "images/portfolio/photography/p2.jpg"
+        "images/portfolio/metreplast/metre-1.png",
+        "images/portfolio/metreplast/metre-2.png",
+        "images/portfolio/metreplast/metre-3.png",
+        "images/portfolio/metreplast/metre-4.png",
+        "images/portfolio/metreplast/metre-5.png",
+        "images/portfolio/metreplast/metre-6.png"
       ],
-      "url": "https://github.com",
+      "url": "https://www.metreplast.com",
       "technologies": [
-        {
-          "class": "devicon-react-original",
-          "name": "React"
-        },
-        {
-          "class": "devicon-javascript-plain",
-          "name": "JavaScript"
-        }
+        "React JS",
+        "Next JS",
+        "Node JS",
+        "Redux",
+        "SEO optimization"
       ]
     },
     {
-      "title": "3D Object Viewer",
-      "startDate": "2015",
-      "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+      "title": "Tusnar psychology test",
+      "startDate": "2019",
+      "description": "Design, implement Tusnar psychology test android app.",
+      "mainImage": "images/portfolio/tusnar/tusnar.png",
       "images": [
-        "images/portfolio/adventure/p1.jpg",
-        "images/portfolio/adventure/p2.jpg"
+        "images/portfolio/tusnar/tusnar-1.jpg",
+        "images/portfolio/tusnar/tusnar-2.jpg",
+        "images/portfolio/tusnar/tusnar-3.jpg",
+        "images/portfolio/tusnar/tusnar-4.jpg"
       ],
-      "url": "https://github.com",
+      "mobileImage": true,
+      "url": "https://cafebazaar.ir/app/com.sqk.tosnar?l=en",
       "technologies": [
-        {
-          "class": "devicon-angularjs-plain",
-          "name": "Angular"
-        },
-        {
-          "class": "devicon-typescript-plain",
-          "name": "TypeScript"
-        },
-        {
-          "class": "devicon-csharp-plain",
-          "name": "C#"
-        }
+        "Kotlin",
+        "Express JS",
+        "Mongo DB",
+        "REST APIs",
+        "Glide",
+        "Retrofit"
+      ]
+    },
+    {
+      "title": "video call service",
+      "startDate": "2019",
+      "description": "Design, implement video call service for a doctor visit booking android app.",
+      "mainImage": "images/portfolio/shafadoc/shafadoc.png",
+      "images": [
+        "images/portfolio/shafadoc/shafadoc-1.jpg",
+        "images/portfolio/shafadoc/shafadoc-2.PNG",
+        "images/portfolio/shafadoc/shafadoc-3.jpg",
+        "images/portfolio/shafadoc/shafadoc-4.PNG"
+      ],
+      "url": "",
+      "mobileImage": true,
+      "technologies": [
+        "Java",
+        "WebRTC",
+        "Jitsi SDK",
+        "Firebase cloud messaging",
+        "Express JS",
+        "Mongo DB",
+        "Retrofit",
+        "Socket"
       ]
     }
   ],
@@ -87,6 +111,7 @@
       "mainTech": ["NextJs"],
       "description": [
         "Design, implement and maintain Adlar App which is a map of changed name inAzerbaijan province of Iran.",
+        "working with SSR and ISR",
         "modifying data with firebase functions.",
         "exporting data with firebase scheduled functions."
       ],
@@ -123,6 +148,31 @@
         "Dio",
         "REST APIs"
       ]
+    },
+    {
+      "company": "Freelancer",
+      "title": "Full-stack and mobile app developer",
+      "years": "Jan 2018 - present",
+      "mainTech": ["Flutter"],
+      "description": [
+        "Ice-watch Iran mobile online shop",
+        "Metre plast website",
+        "Tusnar psychology test android app",
+        "video call service for ShafaDoc android app"
+      ],
+      "technologies": []
+    }
+  ],
+  "education": [
+    {
+      "title": "master's degree, Computer software engineering",
+      "university": "Azad Islamic university, Tabriz",
+      "years": "2021 - present"
+    },
+    {
+      "title": "Bachelor's degree, Computer software engineering",
+      "university": "Payam Noor Universit, Tabriz",
+      "years": "2015 - 2020"
     }
   ]
 }
