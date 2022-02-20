@@ -22,7 +22,7 @@ class Education extends Component {
             icon={
               <span
                 class="iconify"
-                data-icon="fluent:window-dev-edit-16-regular"
+                data-icon="carbon:education"
                 data-width="96"
               ></span>
             }
