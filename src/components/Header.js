@@ -98,7 +98,7 @@ class Header extends Component {
 
                 <div className="contactsColumn">
                   <p className="contactsText mb-0">soheil.q.k@gmail.com</p>
-                  <p className="contactsText mb-0">+98 9933 360 0933</p>
+                  <p className="contactsText mb-0">+98 933 360 0933</p>
                   <a
                     className="contactsText mb-0 contactsLink"
                     href="https://github.com/soheilqk"
