@@ -1,11 +1,4 @@
 import React, { Component } from "react";
-import { Icon } from "@iconify/react";
-import flutterIcon from "@iconify/icons-logos/flutter";
-import reactIcon from "@iconify/icons-logos/react";
-import nextIcon from "@iconify/icons-logos/nextjs";
-import nodeIcon from "@iconify/icons-logos/nodejs";
-import firebaseIcon from "@iconify/icons-logos/firebase";
-import androidIcon from "@iconify/icons-logos/android-icon";
 
 class About extends Component {
   render() {

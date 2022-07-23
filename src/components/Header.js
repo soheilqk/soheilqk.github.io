@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Typical from "react-typical";
-import Switch from "react-switch";
-import { Row } from "react-bootstrap";
 
 class Header extends Component {
   titles = [];

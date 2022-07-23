@@ -32,7 +32,6 @@ class ProjectDetailsModal extends Component {
 
     const mobileImageStyle = {
       height: "630px",
-      paddingBottom: "50px",
       width: "350px",
       paddingBottom: "50px",
     };
