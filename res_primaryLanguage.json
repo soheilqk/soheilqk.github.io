@@ -11,6 +11,34 @@
   },
   "projects": [
     {
+      "title": "Adlar",
+      "startDate": "2022",
+      "description": "• Design, implement and maintain Adlar App, a map of changed name in Azerbaijan province of Iran.\t\n• working with SSR and ISR\n• modifying data with firebase functions.\n• exporting data with firebase scheduled functions",
+      "mainImage": "images/portfolio/adlar/adlar.png",
+      "images": [
+        "images/portfolio/adlar/adlar-1.png",
+        "images/portfolio/adlar/adlar-2.png",
+        "images/portfolio/adlar/adlar-3.png",
+        "images/portfolio/adlar/adlar-4.png"
+      ],
+      "url": "https://www.adlar.org",
+      "technologies": [
+        "React JS",
+        "Next JS",
+        "Express JS",
+        "Node JS",
+        "Google API",
+        "Firebase",
+        "Google analytics",
+        "pdf-creator-node",
+        "Jest",
+        "Multer",
+        "Google map services",
+        "MobX",
+        "REST APIs"
+      ]
+    },
+    {
       "title": "Ice-watch online shop",
       "startDate": "2018",
       "description": "Design, implement and maintain Ice-watch online shop android app.",
@@ -110,25 +138,26 @@
       "years": "Oct 2021 - Present",
       "mainTech": ["NextJs"],
       "description": [
-        "Design, implement and maintain Adlar App which is a map of changed name inAzerbaijan province of Iran.",
-        "working with SSR and ISR",
-        "modifying data with firebase functions.",
-        "exporting data with firebase scheduled functions."
+        "Working as a full-stack developer on several projects e.g Adlar which is published."
       ],
-      "link": "https://www.adlar.org",
       "technologies": [
         "React JS",
         "Next JS",
-        "Express JS",
         "Node JS",
-        "Google API",
+        "Express JS",
+        "Nest JS",
+        "Flutter",
         "Firebase",
-        "Googleanalytics",
-        "Jest unit test",
-        "Multer",
+        "Google APIs",
         "Google map services",
+        "Google analytics",
+        "REST APIs",
+        "Jest",
+        "Pactum",
+        "Multer",
         "MobX",
-        "REST APIs"
+        "Redux",
+        "TDD"
       ]
     },
     {
