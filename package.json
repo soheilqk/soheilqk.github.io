@@ -1,6 +1,7 @@
 {
   "name": "soheilqk-portfolio",
   "version": "0.1.1",
+  "homepage": "https://soheilqk.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
