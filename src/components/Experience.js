@@ -39,7 +39,7 @@ class Experience extends Component {
             }}
             icon={
               <span
-                class="iconify"
+                className="iconify"
                 data-icon="fluent:window-dev-edit-16-regular"
                 data-width="96"
               ></span>
@@ -64,8 +64,10 @@ class Experience extends Component {
             </h4>
 
             <ul className="description">
-              {work?.description?.map((des) => (
-                <li className="descriptionItem">{des}</li>
+              {work?.description?.map((des, i) => (
+                <li key={i} className="descriptionItem">
+                  {des}
+                </li>
               ))}
             </ul>
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Typical from "react-typical";
+import { ReactTyped } from "react-typed";
 
 class Header extends Component {
   titles = [];
@@ -26,21 +26,8 @@ class Header extends Component {
   render() {
     if (this.props.sharedData) {
       var name = this.props.sharedData.name;
-      this.titles = this.props.sharedData.titles
-        .map((x) => [x.toUpperCase(), 1500])
-        .flat();
+      this.title = this.props.sharedData.title;
     }
-
-    const HeaderTitleTypeAnimation = React.memo(
-      () => {
-        return (
-          <div className="contactsRow">
-            <Typical className="title-styles" steps={this.titles} loop={50} />
-          </div>
-        );
-      },
-      (props, prevProp) => true
-    );
 
     return (
       <header id="home" style={{ height: "100vh", display: "block" }}>
@@ -55,7 +42,7 @@ class Header extends Component {
               <br />
               <h1 className="mb-0">{name}</h1>
               <div className="title-container mb-4">
-                <HeaderTitleTypeAnimation />
+                <h1 className="title-styles mt-2">{this.title}</h1>
               </div>
 
               <a
@@ -70,25 +57,25 @@ class Header extends Component {
                 <div className="contactsColumn">
                   <span
                     style={{ height: "55px" }}
-                    class="iconify"
+                    className="iconify"
                     data-icon="carbon:email"
                     data-width="48"
                   />
                   <span
                     style={{ height: "55px" }}
-                    class="iconify"
+                    className="iconify"
                     data-icon="bi:phone"
                     data-width="48"
                   />
                   <span
                     style={{ height: "55px" }}
-                    class="iconify"
+                    className="iconify"
                     data-icon="akar-icons:github-fill"
                     data-width="48"
                   ></span>
                   <span
                     style={{ height: "55px" }}
-                    class="iconify"
+                    className="iconify"
                     data-icon="akar-icons:linkedin-box-fill"
                     data-width="48"
                   ></span>
@@ -96,7 +83,7 @@ class Header extends Component {
 
                 <div className="contactsColumn">
                   <p className="contactsText mb-0">soheil.q.k@gmail.com</p>
-                  <p className="contactsText mb-0">+98 933 360 0933</p>
+                  <p className="contactsText mb-0">+46 76 596 1894</p>
                   <a
                     className="contactsText mb-0 contactsLink"
                     href="https://github.com/soheilqk"
@@ -106,10 +93,10 @@ class Header extends Component {
                   </a>
                   <a
                     className="contactsText mb-0 contactsLink"
-                    href="https://www.linkedin.com/in/soheil-qorbani"
+                    href="https://www.linkedin.com/in/soheil-ghorbani-k"
                     target="_blank"
                   >
-                    soheil-qorbani
+                    soheil-ghorbani-k
                   </a>
                 </div>
               </div>

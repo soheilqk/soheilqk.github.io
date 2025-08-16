@@ -1,7 +1,7 @@
 {
   "basic_info": {
-    "description_header": "Hi",
-    "description": "👋 I'm Soheil Qorbani. I'm a curious person who wants to know everything so they call me Full-stack developer 😀. I'm working with newest front-end frameworks like React, Next and flutter. and for the back-end I work with nodeJs, expressJs and firebase. I'm also a mobile app developer I use kotlin and java for native android development and flutter for both android and IOS. Thank you for your interest 💛.",
+    "description_header": "Hi 👋",
+    "description": "I'm Soheil Ghorbani. I'm a curious person who wants to know everything so they call me Full-stack developer 😀. Creative and detail-oriented Full Stack Developer with +6 years of experience building scalable web and mobile applications across various domains. Proficient in React, Flutter, Node.js, and NestJS, with hands-on experience in integrating AI-powered workflows and deploying production-grade systems on cloud platforms like Google Cloud and DigitalOcean. Strong track record of leading frontend development, collaborating on backend and AI components, and independently delivering full-stack solutions — including cross-platform apps and interactive mapping tools. Adaptable, self-driven, and experienced in remote, multicultural environments, based in Stockholm, Sweden.",
     "section_name": {
       "about": "About me",
       "projects": "Projects and freelancer",
@@ -133,31 +133,60 @@
   ],
   "experience": [
     {
-      "company": "Bizim Consulting AB",
-      "title": "Full-stack Developer",
-      "years": "Oct 2021 - Present",
+      "company": "Resipt.AI",
+      "title": "Senior Full Stack Developer",
+      "years": "Oct 2023 - Present",
       "mainTech": ["NextJs"],
       "description": [
-        "Working as a full-stack developer on several projects e.g Adlar which is published."
+        "Designed, developed, and maintained the complete frontend for Resipt.AI, an AI-powered finance automation platform.",
+        "Implement a handy and user-friendly UI for reconciling credit cards. Implemented nodes creatiion based on dynamic real-time data and auto-positioning based on data.",
+        "Collaborated on designing and developing Resipt.AI backend services and AI integration, leveraging LLMs to extract data from receipts and reconcile financial transactions.",
+        "Implemented and maintained both infrastructures on Google Cloud Platform.",
+        "Automated PR tests and deployments using CI/CD pipelines over GitHub and GCP.",
+        "Decreased the development time using Claude Code and Cursor."
       ],
       "technologies": [
-        "React JS",
-        "Next JS",
-        "Node JS",
-        "Express JS",
-        "Nest JS",
-        "Flutter",
+        "Next.js",
+        "Tailwind CSS",
+        "Shadcn UI",
+        "Typescript",
+        "Zustand",
+        "ReactFlow",
+        "Python",
+        "FastAPI",
         "Firebase",
-        "Google APIs",
-        "Google map services",
-        "Google analytics",
-        "REST APIs",
-        "Jest",
-        "Pactum",
-        "Multer",
-        "MobX",
-        "Redux",
-        "TDD"
+        "Firebase services",
+        "Google Cloud Platform",
+        "CI/CD",
+        "Github actions",
+        "cloud build",
+        "IAM",
+        "LLMs(Gemini - OpenAI)",
+        "Event Driven Development"
+      ]
+    },
+    {
+      "company": "Cybecon AB",
+      "title": "Full Stack Developer",
+      "years": "Oct 2021 - Oct 2023",
+      "mainTech": ["NextJs"],
+      "description": [
+        "Designed, built, and deployed the Bubbu App, a cross-platform audiobook app for children. Published Bubbu App on global stores like App Store and Google Play, and deployed backend service on Digital Ocean.",
+        "Built Adlar, a full-stack interactive mapping platform to document and explore renamed geographic locations, handling everything from data modeling to user interface design."
+      ],
+      "technologies": [
+        "Flutter",
+        "MVVM Architecture",
+        "Provider",
+        "Hive",
+        "Node.js",
+        "Nest.js",
+        "Typescript",
+        "Firebase",
+        "Firebase services",
+        "Google cloud platform",
+        "MixPanel Analytics",
+        "Google Maps API"
       ]
     },
     {
@@ -194,14 +223,23 @@
   ],
   "education": [
     {
-      "title": "master's degree, Computer software engineering",
-      "university": "Azad Islamic university, Tabriz",
-      "years": "2021 - present"
+      "title": "Bachelor's degree, Software engineering",
+      "university": "Payam Noor University, Tabriz",
+      "years": "2015 - 2020"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Cloud Technical Essentials",
+      "institution": "AWS",
+      "years": "06/2025 - 08/2025",
+      "link": "https://www.coursera.org/account/accomplishments/records/A5ECOZV14C0X"
     },
     {
-      "title": "Bachelor's degree, Computer software engineering",
-      "university": "Payam Noor Universit, Tabriz",
-      "years": "2015 - 2020"
+      "title": "Google Cloud Fundamentals",
+      "institution": "Google",
+      "years": "06/2025 - 08/2025",
+      "link": "https://www.coursera.org/account/accomplishments/records/1IXR0WZR5G13"
     }
   ]
 }

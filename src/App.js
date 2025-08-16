@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Certificates from "./components/Certificates";
 
 class App extends Component {
   constructor(props) {
@@ -71,7 +72,7 @@ class App extends Component {
       cache: false,
       success: function (data) {
         this.setState({ sharedData: data });
-        document.title = `${this.state.sharedData.basic_info.name}`;
+        document.title = `${data.basic_info.name}`;
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -135,6 +136,7 @@ class App extends Component {
         />
 
         <Education education={this.state.resumeData.education} />
+        <Certificates certifications={this.state.resumeData.certifications} />
         <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
       </div>
     );

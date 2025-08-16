@@ -5,14 +5,17 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 
-class Education extends Component {
+class Certificates extends Component {
   render() {
-    if (this.props.education) {
-      var educations = this.props.education.map(function (education, i) {
+    if (this.props.certifications) {
+      var certifications = this.props.certifications.map(function (
+        certification,
+        i
+      ) {
         return (
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date={education.years}
+            date={certification.years}
             iconStyle={{
               background: "#AE944F",
               color: "#fff",
@@ -35,14 +38,21 @@ class Education extends Component {
               className="vertical-timeline-element-title"
               style={{ textAlign: "left" }}
             >
-              {education.title}
+              {certification.title}
             </h3>
             <h4
               className="vertical-timeline-element-subtitle"
               style={{ textAlign: "left" }}
             >
-              {education.university}
+              {certification.institution}
             </h4>
+            <a
+              href={certification.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Show Credential
+            </a>
           </VerticalTimelineElement>
         );
       });
@@ -61,7 +71,7 @@ class Education extends Component {
         </div>
         <div className="col-md-12 ">
           <VerticalTimeline>
-            {educations}
+            {certifications}
             <VerticalTimelineElement
               iconStyle={{
                 background: "#AE944F",
@@ -79,4 +89,4 @@ class Education extends Component {
   }
 }
 
-export default Education;
+export default Certificates;

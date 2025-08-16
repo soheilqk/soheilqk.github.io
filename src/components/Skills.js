@@ -12,7 +12,11 @@ class Skills extends Component {
                 <i className={skills.class} style={{ fontSize: "75px" }}>
                   <p
                     className="text-center"
-                    style={{ fontSize: "26%", marginTop: "4px" }}
+                    style={{
+                      fontSize: "20%",
+                      marginTop: "8px",
+                      fontWeight: "700",
+                    }}
                   >
                     {skills.name}
                   </p>
