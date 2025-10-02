@@ -47,7 +47,7 @@ class Header extends Component {
 
               <a
                 className="downloadCV"
-                href="https://github.com/soheilqk/soheilqk/raw/main/Soheil_Qorbani.pdf"
+                href="https://github.com/soheilqk/soheilqk/blob/main/Soheil%20Ghorbani%20CV.pdf"
                 target="_blank"
               >
                 Download CV
